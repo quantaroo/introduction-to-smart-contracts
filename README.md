@@ -47,20 +47,20 @@ npm run test # runs unit tests via Forge
 To deploy your contract use
 
 ```
-npx hardhat --network goerli deploy --contract <contract_name> 
+npx hardhat --network goerli deploy --contract <contract_name>
 ```
 
 If you get `Error: insufficient funds` go to [goerlifaucet](https://goerlifaucet.com/), use your Alchemy login, and enter the wallet address you get from your Metamask wallet. If everything worked you see in your terminal
 
 `Contract deployed to: <deployed_contract_address>    
 
-To "verify" your contract run
+To "verify" that your contract runs
 
 ```
-npx hardhat --network goerli verify <deployed_contract_address> 
+npx hardhat --network goerli verify <deployed_contract_address>
 ```
 
-If you get `Error [...] no API token was found` go to [Etherscan](https://etherscan.io/), create an account, get an API-key and add it to your `.env` 
+If you get `Error [...] no API token was found` go to [Etherscan](https://etherscan.io/), create an account, get an API-key and add it to your `.env`
 
 Now you should be able to interact via your Metamask wallet with your contract on the testnetwork.
 
